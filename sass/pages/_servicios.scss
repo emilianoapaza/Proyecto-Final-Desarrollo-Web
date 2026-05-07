@@ -12,9 +12,12 @@ main {
         z-index: 3;
         background-color: v.$color-black;
         box-shadow: 0 -2rem 3rem 0 #fff2;
-        padding: 5rem;
-        h2 {
-            margin-top: 0;
+        padding: 5rem 3rem;
+
+        @media (min-width: 768px){
+            h2 {
+                margin-top: 0;
+            }
         }
     }
     .container--overlap {
@@ -79,9 +82,6 @@ main {
                 flex-direction: column;
                 gap: 1.5rem;
                 padding-bottom: 2rem;
-
-                h3 {}
-
                 a {
                     width: fit-content;
                 }
@@ -144,7 +144,7 @@ main {
 @media (max-width: 768px) {
     main {
         .container {
-            padding: 1rem;
+            padding: 3rem 1rem;
         }
 
         .container-cards {
