@@ -1,0 +1,69 @@
+@use '../base/variables' as v;
+
+header {
+    width: 100%;
+    color: v.$color-white;
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 70rem;
+        background-image: url(../../img/hero.webp);
+        background-position: 50% 10%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @media (max-width: 1024px){
+        .hero {
+            height: 40rem;
+        }
+    }
+}
+
+.hero-info {
+    position: relative;
+    z-index: 10;
+    top: 30%;
+}
+
+.hero-info__h1 {
+    font-size: clamp(1.3rem, 10vw, 4rem);
+    text-align: start;
+    margin: 0;
+}
+
+.hero-info__p {
+    font-size: 2rem;
+}
+
+.hero-info__button {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: clamp(1rem, 5vw, 1.6rem);
+}
+@media (max-width: 768px){
+    .hero-info__button{
+        width: 100%;
+    }
+}
+
+
+main {
+    .container {
+        position: relative;
+        margin-top: -20rem;
+        z-index: 3;
+        height: 100vh;
+        background-color: v.$color-black;
+        border-radius: 2rem 2rem 0 0;
+        box-shadow: 0 5rem 5rem .5rem #fff5;
+        padding: 2rem;
+    }
+    @media (max-width: 1024px){
+        .container {
+            width: 100%;
+            border-radius: 0;
+            margin-top: 0;
+        }
+    }
+}

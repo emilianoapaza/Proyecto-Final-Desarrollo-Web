@@ -1,0 +1,140 @@
+@use '../base/variables' as v;
+
+.footer {
+    background-color: #0f0f0f;
+    color: v.$color-white;
+    padding-top: 6rem;
+    margin-top: 8rem;
+    border-top: .1rem solid #ffffff20;
+
+    &__container {
+        width: min(90vw, 160rem);
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+    }
+
+    &__brand {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        img {
+            width: 16rem;
+        }
+
+        p {
+            line-height: 2.7rem;
+            color: #bdbdbd;
+        }
+    }
+
+    &__links,
+    &__contact,
+    &__social {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__links {
+
+        a {
+            color: #bdbdbd;
+            transition: .3s ease;
+
+            &:hover {
+                color: #efb71e;
+                transform: translateX(.5rem);
+            }
+        }
+    }
+
+    &__contact {
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #bdbdbd;
+        }
+
+        i {
+            color: #efb71e;
+            font-size: 1.8rem;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        gap: 1.5rem;
+
+        a {
+            width: 4.5rem;
+            height: 4.5rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 50%;
+            background-color: #1d1d1d;
+
+            color: v.$color-white;
+            font-size: 2rem;
+
+            transition: .3s ease;
+
+            &:hover {
+                background-color: #efb71e;
+                color: #000;
+                transform: translateY(-.5rem);
+            }
+        }
+    }
+
+    &__copy {
+        margin-top: 5rem;
+        padding: 2rem;
+        text-align: center;
+
+        border-top: .1rem solid #ffffff10;
+
+        p {
+            color: #9c9c9c;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .footer {
+
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer {
+
+        &__container {
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
+
+        &__icons {
+            justify-content: start;
+        }
+    }
+}
