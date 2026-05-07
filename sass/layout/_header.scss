@@ -1,7 +1,6 @@
 @use '../base/variables' as v;
 
 .nav {
-    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -82,13 +81,13 @@
         }
     }
 }
+
 .fixed {
     position: fixed;
 }
 
 @media (max-width: 1024px) {
     .nav {
-        position: static;
         .nav__container {
             width: 100%;
             display: grid;

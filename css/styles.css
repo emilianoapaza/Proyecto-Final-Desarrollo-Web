@@ -132,7 +132,6 @@ main .gap-10rem {
 }
 
 .nav {
-  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -208,9 +207,6 @@ main .gap-10rem {
 }
 
 @media (max-width: 1024px) {
-  .nav {
-    position: static;
-  }
   .nav .nav__container {
     width: 100%;
     display: grid;
@@ -311,7 +307,6 @@ main .container--overlap {
   main .container {
     width: 100%;
     border-radius: 0;
-    margin-top: 0;
   }
 }
 
