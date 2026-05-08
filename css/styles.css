@@ -17,7 +17,7 @@ main {
 }
 
 .container {
-  width: min(100%, 120rem);
+  width: min(100%, 130rem);
   margin: 0 auto;
 }
 
@@ -132,6 +132,7 @@ main .gap-10rem {
 }
 
 .nav {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -292,7 +293,7 @@ main .container {
   z-index: 3;
   background-color: #000;
   box-shadow: 0 -2rem 3rem 0 rgba(255, 255, 255, 0.1333333333);
-  padding: 5rem 3rem;
+  padding: 5rem 4rem;
 }
 @media (min-width: 768px) {
   main .container h2 {
@@ -307,6 +308,10 @@ main .container--overlap {
   main .container {
     width: 100%;
     border-radius: 0;
+    padding: 5rem 8rem;
+  }
+  main .container--overlap {
+    margin-top: 0;
   }
 }
 
