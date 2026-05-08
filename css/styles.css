@@ -553,7 +553,7 @@ main .container--overlap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
 }
 .container .nosotros .nosotros__content h2 {
   margin-bottom: 1rem;
