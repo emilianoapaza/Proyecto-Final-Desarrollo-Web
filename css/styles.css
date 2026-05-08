@@ -593,7 +593,7 @@ main .container--overlap {
     width: min(70vw, 30rem);
     height: min(70vw, 30rem);
   }
-  .container .nosotros .nosotros__content .nosotros__info div .nosotros__icon svg {
+  .container .nosotros .nosotros__content .nosotros__info div .nosotros__icon img {
     scale: 2;
   }
 }
@@ -633,7 +633,8 @@ main .container--overlap {
 .container .porque .porque__card:hover {
   transform: translateY(-1rem);
 }
-.container .porque .porque__card h3, .container .porque .porque__card svg {
+.container .porque .porque__card h3, .container .porque .porque__card img {
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
 .container .porque .porque__card p {

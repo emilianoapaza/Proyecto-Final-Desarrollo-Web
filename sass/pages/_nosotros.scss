@@ -60,7 +60,7 @@
                     .nosotros__icon {
                         width: min(70vw, 30rem);
                         height: min(70vw, 30rem);
-                        svg {
+                        img {
                             scale: 2;
                         }
                     }
@@ -111,7 +111,8 @@
             transform: translateY(-1rem);
         }
 
-        h3,svg {
+        h3,img {
+            margin: 0 auto;
             margin-bottom: 2rem;
         }
 
