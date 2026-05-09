@@ -48,6 +48,12 @@
     }
     .button {
         width: fit-content;
+        text-align: center;
+    }
+    @media (max-width: 768px) {
+        .button {
+            width: 100%;
+        }
     }
 }
 

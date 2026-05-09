@@ -17,6 +17,14 @@ header {
     @media (max-width: 1024px) {
         .hero {
             height: 40rem;
+            .hero-info {
+                top: 30%;
+            }
+            @media (max-width: 480px) {
+                .hero-info {
+                    top: 20%
+                }
+            }
         }
     }
 }

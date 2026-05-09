@@ -83,6 +83,12 @@
                 margin: 1rem;
                 width: fit-content;
                 align-self: center;
+                text-align: center;
+            }
+            @media (max-width: 768px) {
+                .button {
+                    width: 100%;
+                }
             }
 
             
