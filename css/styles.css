@@ -49,12 +49,16 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: clamp(1.6rem, 10vw, 3rem);
   text-align: center;
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: clamp(1.4rem, 8vw, 2.2rem);
+}
+
+p {
+  font-size: clamp(0.8rem, 4vw, 1.8rem);
 }
 
 * {
@@ -459,18 +463,6 @@ main .container--overlap {
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
 }
-.footer__brand {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.footer__brand img {
-  width: 16rem;
-}
-.footer__brand p {
-  line-height: 2.7rem;
-  color: #bdbdbd;
-}
 .footer__links, .footer__contact, .footer__social {
   display: flex;
   flex-direction: column;
@@ -777,7 +769,22 @@ main .container--overlap {
 .contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6rem;
+  gap: 5rem;
+}
+@media (max-width: 1024px) {
+  .contacto {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .contacto {
+    padding: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .contacto {
+    padding: 1rem;
+  }
 }
 .contacto__info {
   display: flex;
@@ -785,10 +792,11 @@ main .container--overlap {
   justify-content: center;
   gap: 3rem;
 }
-.contacto__text {
-  color: #cfcfcf;
+.contacto__info p {
+  color: #ddd;
+}
+.contacto__texto {
   line-height: 3rem;
-  font-size: 1.8rem;
 }
 .contacto__data {
   display: flex;
@@ -797,34 +805,49 @@ main .container--overlap {
 }
 .contacto__item {
   display: flex;
-  align-items: center;
   gap: 2rem;
-  background-color: #181818;
   padding: 2rem;
-  border-radius: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.062745098);
+  background-color: #181818;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.0666666667);
 }
 .contacto__item img {
   width: 5rem;
   height: 5rem;
-  padding: 1rem;
   border-radius: 50%;
-  background-color: #222;
+  background-color: #111;
+  padding: 1rem;
 }
 .contacto__item h3 {
   margin-bottom: 0.5rem;
 }
-.contacto__item p {
-  color: #bdbdbd;
+@media (max-width: 768px) {
+  .contacto__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto__item div {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .contacto__item {
+    padding: 1rem;
+  }
 }
 .contacto__form {
-  background-color: #181818;
-  padding: 4rem;
-  border-radius: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.062745098);
+  justify-content: space-between;
+  background-color: #181818;
+  padding: 4rem;
+  gap: 3rem;
+  border-radius: 2rem;
+}
+@media (max-width: 480px) {
+  .contacto__form {
+    padding: 2rem;
+  }
 }
 .contacto__field {
   display: flex;
@@ -834,46 +857,31 @@ main .container--overlap {
 .contacto__field label {
   font-weight: 600;
 }
-.contacto__field input,
-.contacto__field textarea {
+.contacto__field input, .contacto__field textarea {
   width: 100%;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.0823529412);
-  background-color: #101010;
+  background-color: #111;
   color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.0666666667);
+  padding: 1.5rem;
+  transition: border 0.3s;
+  border-radius: 1rem;
   font-family: inherit;
-  resize: none;
-  transition: border 0.3s ease;
 }
-.contacto__field input:focus,
-.contacto__field textarea:focus {
+.contacto__field input:focus, .contacto__field textarea:focus {
   outline: none;
   border-color: #efb71e;
 }
+@media (max-width: 240px) {
+  .contacto__field input, .contacto__field textarea {
+    padding: 0.5rem;
+  }
+}
 .contacto__field textarea {
-  min-height: 18rem;
+  height: 20rem;
+  resize: none;
 }
 .contacto .button {
-  width: 100%;
-  margin-top: 1rem;
-}
-@media (max-width: 1024px) {
-  .contacto {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 768px) {
-  .contacto {
-    gap: 4rem;
-  }
-  .contacto__form {
-    padding: 2rem;
-  }
-  .contacto__item {
-    flex-direction: column;
-    text-align: center;
-  }
+  padding: 1rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

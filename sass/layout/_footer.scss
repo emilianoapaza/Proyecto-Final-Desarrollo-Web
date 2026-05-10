@@ -16,20 +16,7 @@
         gap: 5rem;
     }
 
-    &__brand {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        img {
-            width: 16rem;
-        }
-
-        p {
-            line-height: 2.7rem;
-            color: #bdbdbd;
-        }
-    }
+    
 
     &__links,
     &__contact,
