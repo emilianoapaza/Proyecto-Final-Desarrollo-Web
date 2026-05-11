@@ -893,6 +893,7 @@ main .container--overlap {
 @media (max-width: 1024px) {
   .contacto iframe {
     height: 50rem;
+    width: 100%;
   }
 }
 
