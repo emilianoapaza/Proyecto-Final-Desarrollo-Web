@@ -1,4 +1,5 @@
 @use '../base/variables' as v;
+@use '../base/extends';
 
 
 main {
@@ -48,15 +49,7 @@ main {
     padding-top: 2rem;
 
     .card {
-        flex: 1;
-        border-radius: 2rem;
-        padding: 2rem;
-        gap: 2rem;
-        background-color: #181818;
-        box-shadow: 0 0 1rem .1rem #fff4;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
+        @extend %card-base;
     /*height: fit-content;*/
         .card__img {
             width: 100%;

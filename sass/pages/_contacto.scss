@@ -38,9 +38,6 @@
         img {
             width: 5rem;
             height: 5rem;
-            border-radius: 50%;
-            background-color:  #111;
-            padding: 1rem;
         }
         h3 {
             margin-bottom: .5rem;
@@ -100,5 +97,15 @@
     }
     .button {
         padding: 1rem 0;
+    }
+    &__map {
+        text-align: center;
+    }
+    iframe {
+        width: 50rem;
+        height: 100%;
+        @media (max-width: 1024px) {
+            height: 50rem;
+        }
     }
 }
