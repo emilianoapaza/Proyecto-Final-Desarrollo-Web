@@ -1,5 +1,7 @@
 @use '../base/variables' as v;
 @use '../base/extends';
+@use '../base/mixins' as m;
+
 
 
 main {
@@ -7,8 +9,7 @@ main {
         margin-top: 8rem;
     }
     .container {
-        display: flex;
-        flex-direction: column;
+        @include m.flex-center;
         position: relative;
         z-index: 3;
         background-color: v.$color-black;

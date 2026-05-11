@@ -317,8 +317,6 @@ main .bug-fixed {
   margin-top: 8rem;
 }
 main .container {
-  display: flex;
-  flex-direction: column;
   position: relative;
   z-index: 3;
   background-color: #000;
@@ -907,4 +905,4 @@ main .container--overlap {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.csss.map */
