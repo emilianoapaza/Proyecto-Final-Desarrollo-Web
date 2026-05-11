@@ -120,5 +120,8 @@ img {
 main {
     .gap-10rem {
         gap: 10rem;
+        @media (max-width: 1024px){
+            gap: 6rem;
+        }
     }
 }

@@ -135,6 +135,11 @@ img {
 main .gap-10rem {
   gap: 10rem;
 }
+@media (max-width: 1024px) {
+  main .gap-10rem {
+    gap: 6rem;
+  }
+}
 
 .nav {
   position: fixed;
@@ -794,6 +799,11 @@ main .container--overlap {
   flex-direction: column;
   justify-content: center;
   gap: 3rem;
+}
+@media (max-width: 768px) {
+  .contacto__info h2 {
+    margin-top: 0;
+  }
 }
 .contacto__info p {
   color: #ddd;
