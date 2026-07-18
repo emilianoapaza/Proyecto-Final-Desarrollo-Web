@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactate con Barber Shoop para reservar tu turno o realizar consultas. Atención personalizada y ubicación en Salta, Argentina.">
-    <meta name="keywords" content="contacto barbería, reservar turno barbería, barbería Salta, atención barbería, turnos online">
+    <meta name="description"
+        content="Contactate con Barber Shoop para reservar tu turno o realizar consultas. Atención personalizada y ubicación en Salta, Argentina.">
+    <meta name="keywords"
+        content="contacto barbería, reservar turno barbería, barbería Salta, atención barbería, turnos online">
     <meta name="author" content="Emiliano Apaza">
     <link rel="stylesheet" href="../css/styles.css">
 
@@ -57,7 +59,8 @@
             <section class="contacto">
                 <div class="contacto__info">
                     <h2>Contacto</h2>
-                    <p class="contacto__texto">¿Tenés dudas o querés reservar tu turno? Completá el formulario y te responderemos lo antes posible.</p>
+                    <p class="contacto__texto">¿Tenés dudas o querés reservar tu turno? Completá el formulario y te
+                        responderemos lo antes posible.</p>
                     <div class="contacto__data">
                         <div class="contacto__item">
                             <img src="../img/icons/map-pin.svg" alt="Ubicacion">
@@ -82,25 +85,35 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="resumen" id="resumen-reserva">
+                    <h3>Resumen de tu reserva</h3>
+                </div>
+
                 <form class="contacto__form">
                     <div class="contacto__field">
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" placeholder="Tu nombre">
                     </div>
                     <div class="contacto__field">
-                        <label for="email">Tu email</label>
+                        <label for="email">Email</label>
                         <input type="text" id="email" placeholder="Tu email">
                     </div>
                     <div class="contacto__field">
-                        <label for="tel">Tu numero</label>
-                        <input type="tel" id="tel" placeholder="tel">
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" placeholder="telelfono">
 
                     </div>
                     <div class="contacto__field">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha">
                     </div>
-                    <button class="button button-verde">Enviar mensaje</button>
+
+                    <div class="contacto__field">
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora">
+                    </div>
+                    <button class="button button-verde">Confirmar Reserva</button>
                 </form>
 
             </section>
@@ -172,6 +185,8 @@
             nav.classList.toggle('nav--active');
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/contacto.js"></script>
 
 </body>
 

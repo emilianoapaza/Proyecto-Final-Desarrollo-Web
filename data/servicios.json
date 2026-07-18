@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre": "Fade + Barba",
+        "descripcion": "Precisión y elegancia en cada detalle. Un corte moderno acompañado de perfilado y arreglo de barba.",
+        "precio": 15000,
+        "duracion": 60,
+        "imagen": "../img/fade-b.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "Fade + Diseño",
+        "descripcion": "Degradado moderno con diseños personalizados para un estilo único y actual.",
+        "precio": 14000,
+        "duracion": 60,
+        "imagen": "../img/fade-d.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "Taper Fade",
+        "descripcion": "Transición suave en los laterales con un acabado limpio y elegante.",
+        "precio": 13000,
+        "duracion": 45,
+        "imagen": "../img/taper-fade.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Corte Clásico",
+        "descripcion": "Un corte tradicional, prolijo y elegante que nunca pasa de moda.",
+        "precio": 12000,
+        "duracion": 45,
+        "imagen": "../img/corte-clasico.webp"
+    },
+    {
+        "id": 5,
+        "nombre": "Fade",
+        "descripcion": "Degradado moderno con transiciones suaves para un look fresco y definido.",
+        "precio": 13000,
+        "duracion": 45,
+        "imagen": "../img/low-fade.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Buzz Cut",
+        "descripcion": "Corte uniforme, práctico y de bajo mantenimiento para quienes buscan comodidad.",
+        "precio": 10000,
+        "duracion": 30,
+        "imagen": "../img/corte-corto.webp"
+    }
+]

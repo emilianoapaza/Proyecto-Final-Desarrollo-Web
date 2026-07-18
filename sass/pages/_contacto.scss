@@ -1,6 +1,8 @@
 .contacto {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    max-width: 50rem;
+    margin: 0 auto;
     gap: 5rem;
     @media (max-width: 1024px){
         grid-template-columns: 1fr;
@@ -114,4 +116,49 @@
             width: 100%;
         }
     }
+}
+.resumen{
+
+    background-color:#181818;
+    border-radius:2rem;
+    padding:3rem;
+    border:1px solid #ffffff15;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    align-self:start;
+
+    &__titulo{
+        margin:0;
+        text-align:center;
+        color:#efb71e;
+        border-bottom:1px solid #ffffff15;
+        padding-bottom:1rem;
+    }
+
+    &__item{
+
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+
+        padding:1rem 0;
+
+        border-bottom:1px solid #ffffff10;
+
+        span{
+            color:#bbb;
+        }
+
+        strong{
+            color:white;
+            font-size:1.8rem;
+        }
+
+        &:last-child{
+            border:none;
+        }
+
+    }
+
 }
